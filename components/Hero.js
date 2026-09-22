@@ -6,7 +6,6 @@ export default function Hero() {
   return (
     <section className={styles.hero} aria-label="Présentation">
       <div className={styles.inner}>
-        <h1 className={styles.title}>Zatrap&apos;</h1>
         <div className={styles.photoWrap}>
           <Image
             src={heroPhoto}
@@ -17,6 +16,7 @@ export default function Hero() {
             priority
           />
         </div>
+        <h1 className={styles.title}>Zatrap&apos;</h1>
       </div>
     </section>
   );
