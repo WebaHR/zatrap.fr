@@ -8,7 +8,7 @@ export default function TwoColumns() {
     <section className={styles.section} aria-label="À propos">
       <div className={styles.grid}>
         <div className={styles.textCol}>
-          <h2 className={styles.heading}>L&apos;histoire</h2>
+          <h2 className={styles.heading}>Régis Granville, artiste plasticien et visuel</h2>
           <p className={styles.paragraph}>
             Il ne crée pas de simples objets : il façonne des expériences. Sa
             démarche explore le dialogue intime entre la matière et la
