@@ -6,26 +6,38 @@ import Script from "next/script";
 import styles from "./TwoColumns.module.css";
 import posterImage from "@/public/images/video-poster.png";
 
-const ACCESS_PASSWORD = "zatrap2026";
-
 export default function VimeoEmbed({ videoId, title }) {
   const [playing, setPlaying] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [password, setPassword] = useState("");
   const [error, setError] = useState(false);
+  const [checking, setChecking] = useState(false);
   const wrapRef = useRef(null);
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault();
-    if (password !== ACCESS_PASSWORD) {
+    setChecking(true);
+    try {
+      const response = await fetch("/api/verify-video-password", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+      });
+      const data = await response.json();
+      if (!data.valid) {
+        setError(true);
+        return;
+      }
+      setError(false);
+      setPassword("");
+      setShowModal(false);
+      setPlaying(true);
+      wrapRef.current?.requestFullscreen?.().catch(() => {});
+    } catch {
       setError(true);
-      return;
+    } finally {
+      setChecking(false);
     }
-    setError(false);
-    setPassword("");
-    setShowModal(false);
-    setPlaying(true);
-    wrapRef.current?.requestFullscreen?.().catch(() => {});
   }
 
   return (
@@ -99,8 +111,8 @@ export default function VimeoEmbed({ videoId, title }) {
               >
                 Annuler
               </button>
-              <button type="submit" className={styles.modalSubmit}>
-                Valider
+              <button type="submit" className={styles.modalSubmit} disabled={checking}>
+                {checking ? "Vérification…" : "Valider"}
               </button>
             </div>
           </form>
