@@ -26,8 +26,10 @@
 
 .paragraph {
   color: var(--color-muted);
-  font-size: 1.05rem;
   margin-bottom: 1.1rem;
+  font-size: 1rem;
+  width: 550px;
+  text-align: justify;
 }
 
 .paragraph:last-child {
