@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Hero.module.css";
-import heroPhoto from "@/public/images/hero-photo.svg";
+import heroPhoto from "@/public/images/hero-photo.jpg";
 
 export default function Hero() {
   return (
