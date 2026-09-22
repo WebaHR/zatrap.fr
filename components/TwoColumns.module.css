@@ -70,6 +70,29 @@
   border: 0;
 }
 
+.videoWrap::before,
+.videoWrap::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  z-index: 2;
+  pointer-events: none;
+  background-color: #0a0a0a;
+  background-image: radial-gradient(circle, var(--color-bg) 0 5px, transparent 6px);
+  background-size: 28px 28px;
+  background-position: center;
+}
+
+.videoWrap::before {
+  left: 0;
+}
+
+.videoWrap::after {
+  right: 0;
+}
+
 .videoPoster {
   position: absolute;
   inset: 0;
