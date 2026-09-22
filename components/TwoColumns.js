@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./TwoColumns.module.css";
 import VideoDropzone from "./VideoDropzone";
-import sidePhoto from "@/public/images/side-photo.svg";
+import sidePhoto from "@/public/images/side-photo.jpg";
 
 export default function TwoColumns() {
   return (
@@ -26,7 +26,7 @@ export default function TwoColumns() {
           <div className={styles.photoWrap}>
             <Image
               src={sidePhoto}
-              alt="Photo de Zatrap' en studio"
+              alt="Sculpture en bois de Zatrap'"
               fill
               sizes="(max-width: 900px) 100vw, 560px"
               className={styles.photo}
