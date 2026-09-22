@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Script from "next/script";
 import styles from "./TwoColumns.module.css";
+import VimeoEmbed from "./VimeoEmbed";
 import sidePhoto from "@/public/images/side-photo.jpg";
 
 export default function TwoColumns() {
@@ -60,17 +60,7 @@ export default function TwoColumns() {
               className={styles.photo}
             />
           </div>
-          <div className={styles.videoWrap}>
-            <iframe
-              src="https://player.vimeo.com/video/1229180211?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              className={styles.videoIframe}
-              title="ZATRAP_REGIS GRANVILLE_092026"
-            />
-          </div>
-          <Script src="https://player.vimeo.com/api/player.js" strategy="lazyOnload" />
+          <VimeoEmbed videoId="1229180211" title="ZATRAP_REGIS GRANVILLE_092026" />
         </div>
       </div>
     </section>
