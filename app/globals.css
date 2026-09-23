@@ -41,6 +41,12 @@ a {
   outline-offset: 3px;
 }
 
+@media (min-width: 1400px) {
+  :root {
+    --max-width: 1400px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
