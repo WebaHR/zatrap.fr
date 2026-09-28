@@ -5,6 +5,12 @@
   justify-content: right;
 }
 
+@media (min-width: 701px) {
+  .hero {
+    padding-top: 1.5rem;
+  }
+}
+
 .inner {
   width: 100%;
   max-width: var(--max-width);
