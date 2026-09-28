@@ -36,6 +36,48 @@
   margin-bottom: 0;
 }
 
+.textContent {
+  width: 550px;
+  transition: max-height 0.4s ease;
+}
+
+.textContentCollapsed {
+  max-height: 352px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, #000 0%, #000 67%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 67%, transparent 100%);
+}
+
+.textContentExpanded {
+  max-height: 3000px;
+}
+
+.readMoreButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.readMoreButton:hover {
+  color: var(--color-accent);
+}
+
+.readMoreIcon {
+  transition: transform 0.2s ease;
+}
+
+.readMoreIconOpen {
+  transform: rotate(180deg);
+}
+
 .mediaCol {
   width: 100%;
 }
