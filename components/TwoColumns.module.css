@@ -302,12 +302,21 @@
 }
 
 @media (max-width: 800px) {
+  .section {
+    width: 100%;
+  }
+
   .grid {
     grid-template-columns: 1fr;
   }
 
   .textCol {
     max-width: none;
+  }
+
+  .paragraph,
+  .textContent {
+    width: 100%;
   }
 
   .videoRow {
