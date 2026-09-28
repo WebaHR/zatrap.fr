@@ -50,12 +50,12 @@
   letter-spacing: -0.01em;
   color: var(--color-text);
   white-space: nowrap;
-  transform: translateX(193px);
+  transform: translateX(164px);
 }
 
 @media (min-width: 1400px) {
   .title {
-    transform: translateX(389px);
+    transform: translateX(245px);
   }
 }
 
