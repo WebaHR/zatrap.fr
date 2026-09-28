@@ -122,6 +122,21 @@
   margin-bottom: 0.75rem;
 }
 
+.videoTextContent {
+  transition: max-height 0.4s ease;
+}
+
+.videoTextContentCollapsed {
+  max-height: 177px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 68%, transparent 100%);
+}
+
+.videoTextContentExpanded {
+  max-height: 3000px;
+}
+
 .videoByline {
   font-size: 0.85rem;
   font-style: italic;
