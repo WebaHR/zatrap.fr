@@ -32,7 +32,7 @@
 .photoWrap {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   width: clamp(200px, 26vw, 150px);
   aspect-ratio: 1 / 1;
   transform: translate(-50%, -50%) rotate(25deg);
