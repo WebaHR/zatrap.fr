@@ -51,8 +51,8 @@ export default function ExpandableBio() {
           une vérité posée là, qui nous murmure qu&apos;il est encore temps
           de se reconnecter au vivant.
         </p>
-        <p className={styles.paragraph}>
-          À vous, désormais, de la faire naître.
+        <p className={`${styles.paragraph} ${styles.paragraphItalic}`}>
+          À vous, désormais, de la faire naître...
         </p>
       </div>
       <button

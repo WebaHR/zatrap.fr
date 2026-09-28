@@ -38,6 +38,10 @@
   margin-bottom: 0;
 }
 
+.paragraphItalic {
+  font-style: italic;
+}
+
 .textContent {
   width: 550px;
   transition: max-height 0.4s ease;
