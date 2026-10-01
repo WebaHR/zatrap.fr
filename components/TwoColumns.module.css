@@ -36,7 +36,7 @@
 .paragraph {
   color: var(--color-muted);
   margin-bottom: 1.1rem;
-  font-size: 1rem;
+  font-size: 0.85rem;
   width: 100%;
   text-align: justify;
 }
@@ -55,10 +55,10 @@
 }
 
 .textContentCollapsed {
-  max-height: 237px;
+  max-height: 181px;
   overflow: hidden;
-  mask-image: linear-gradient(to bottom, #000 0%, #000 51%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 51%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 46%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 46%, transparent 100%);
 }
 
 .textContentExpanded {
