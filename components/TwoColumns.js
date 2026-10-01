@@ -28,7 +28,7 @@ export default function TwoColumns() {
         </div>
       </section>
 
-      <section className={styles.section} aria-label="À propos de l'artiste">
+      <section className={`${styles.section} ${styles.artistSection}`} aria-label="À propos de l'artiste">
         <div className={styles.grid}>
           <div className={styles.textCol}>
             <ExpandableBio />
