@@ -55,10 +55,10 @@
 }
 
 .textContentCollapsed {
-  max-height: 855px;
+  max-height: 237px;
   overflow: hidden;
-  mask-image: linear-gradient(to bottom, #000 0%, #000 75%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 75%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 51%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 51%, transparent 100%);
 }
 
 .textContentExpanded {

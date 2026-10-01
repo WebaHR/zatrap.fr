@@ -16,15 +16,6 @@ export default function ExpandableBio() {
         }`}
       >
         <p className={styles.paragraph}>
-          Il ne crée pas de simples objets : il façonne des expériences. Sa
-          démarche explore le dialogue intime entre la matière et la
-          lumière, tissant des ponts entre mémoire, spiritualité et
-          condition humaine. Qu’il s’exprime à travers la peinture
-          abstraite, la photographie ou la rigueur alchimique du verre en
-          fusion, son travail cherche à donner une forme tangible à ce qui
-          nous lie à notre environnement.
-        </p>
-        <p className={styles.paragraph}>
           Au-delà de la toile, l&apos;artiste libère l&apos;œuvre de son
           cadre traditionnel pour concevoir des installations immersives où
           le spectateur devient acteur. C’est le cœur de son projet
