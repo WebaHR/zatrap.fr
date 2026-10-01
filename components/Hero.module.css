@@ -36,7 +36,7 @@
   width: clamp(200px, 26vw, 150px);
   aspect-ratio: 1 / 1;
   transform: translate(-50%, -50%) rotate(25deg);
-  box-shadow: 0 0 0 6px var(--color-surface), 0 30px 60px -20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 0 0px var(--color-surface), 0 30px 60px -20px rgba(0, 0, 0, 0.7);
 }
 
 .photo {
