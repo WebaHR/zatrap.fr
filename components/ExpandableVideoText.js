@@ -1,21 +1,11 @@
-"use client";
-
-import { useState } from "react";
 import styles from "./TwoColumns.module.css";
 
 export default function ExpandableVideoText() {
-  const [expanded, setExpanded] = useState(false);
-
   return (
     <>
       <h3 className={styles.videoTitle}>ZATRAP&apos; – L&apos;APPÂT SACRÉ</h3>
       <p className={styles.videoTagline}>Une Odyssée anthropologique</p>
-      <div
-        id="video-text-panel"
-        className={`${styles.videoTextContent} ${
-          expanded ? styles.videoTextContentExpanded : styles.videoTextContentCollapsed
-        }`}
-      >
+      <div id="video-text-panel" className={styles.videoTextContent}>
         <p className={styles.videoByline}>
           Installation immersive de Régis Granville
         </p>
@@ -48,33 +38,6 @@ export default function ExpandableVideoText() {
           disponible ici-même sur le site ».
         </p>
       </div>
-      <button
-        type="button"
-        className={styles.readMoreButton}
-        aria-expanded={expanded}
-        aria-controls="video-text-panel"
-        aria-label={expanded ? "Fermer la présentation" : "Lire la présentation"}
-        onClick={() => setExpanded((value) => !value)}
-      >
-        {expanded ? "Lire moins" : "Lire plus"}
-        <svg
-          width="20"
-          height="12"
-          viewBox="0 0 20 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className={`${styles.readMoreIcon} ${expanded ? styles.readMoreIconOpen : ""}`}
-          aria-hidden="true"
-        >
-          <path
-            d="M1 1L10 10L19 1"
-            stroke="currentColor"
-            strokeWidth="1"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </button>
     </>
   );
 }
