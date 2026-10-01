@@ -108,6 +108,7 @@
   gap: clamp(1.5rem, 4vw, 3rem);
   align-items: start;
   margin-top: clamp(2rem, 5vw, 4rem);
+  min-width: 710px;
 }
 
 .videoText {
@@ -306,5 +307,6 @@
 
   .videoRow {
     grid-template-columns: 1fr;
+    min-width: 0;
   }
 }
