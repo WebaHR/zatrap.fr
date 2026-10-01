@@ -10,7 +10,7 @@ export default function TwoColumns() {
     <section className={styles.section} aria-label="À propos">
       <div className={styles.grid}>
         <div className={styles.textCol}>
-          <ExpandableBio />
+          <ExpandableVideoText />
         </div>
 
         <div className={styles.mediaCol}>
@@ -25,7 +25,7 @@ export default function TwoColumns() {
           </div>
           <div className={styles.videoRow}>
             <div className={styles.videoText}>
-              <ExpandableVideoText />
+              <ExpandableBio />
             </div>
             <VimeoEmbed videoId="1229180211" title="ZATRAP_REGIS GRANVILLE_092026" />
           </div>
