@@ -109,6 +109,12 @@
   object-fit: cover;
 }
 
+.photoCredit {
+  margin-top: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+}
+
 .videoTitle {
   font-family: var(--font-display), sans-serif;
   font-size: clamp(1.75rem, 3vw, 2.5rem);
