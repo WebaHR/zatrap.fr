@@ -10,6 +10,7 @@ export default function Hero() {
         <h1 className={styles.title}>Zatrap&apos;</h1>
       </div>
       <div className={styles.photoWrap}>
+        <p className={styles.photoCredit}>Crédit photo : Talos BUCCELLATI</p>
         <Image
           src={heroPhoto}
           alt="Portrait de Zatrap'"

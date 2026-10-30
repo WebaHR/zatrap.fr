@@ -43,6 +43,23 @@
   object-fit: cover;
 }
 
+.photoCredit {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+@media (min-width: 701px) {
+  .photoWrap {
+    top: 190px;
+  }
+}
+
 .title {
   font-family: var(--font-display), sans-serif;
   font-size: clamp(3.5rem, 10vw, 8rem);
