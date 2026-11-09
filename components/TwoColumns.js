@@ -29,6 +29,27 @@ export default function TwoColumns() {
         </div>
       </section>
 
+      <section className={styles.section} aria-label="Présentation du projet">
+        <div className={styles.grid}>
+          <div className={styles.textCol}>
+            <ExpandableVideoText />
+          </div>
+
+          <div className={styles.mediaCol}>
+            <div className={styles.photoWrap}>
+              <Image
+                src={sidePhoto}
+                alt="Sculpture en bois de Zatrap'"
+                fill
+                sizes="(max-width: 900px) 100vw, 560px"
+                className={styles.photo}
+              />
+            </div>
+            <p className={styles.photoCredit}>Crédit photo : JCP2026</p>
+          </div>
+        </div>
+      </section>
+
       <section className={`${styles.section} ${styles.artistSection}`} aria-label="À propos de l'artiste">
         <div className={styles.grid}>
           <div className={styles.textCol}>
