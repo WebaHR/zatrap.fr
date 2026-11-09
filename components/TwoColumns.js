@@ -40,18 +40,6 @@ export default function TwoColumns() {
           </div>
         </div>
       </section>
-
-      <section className={`${styles.section} ${styles.artistSection}`} aria-label="À propos de l'artiste">
-        <div className={styles.grid}>
-          <div className={styles.textCol}>
-            <ExpandableBio />
-          </div>
-
-          <div className={styles.mediaCol}>
-            <VimeoEmbed videoId="1229180211" title="ZATRAP_REGIS GRANVILLE_092026" />
-          </div>
-        </div>
-      </section>
     </>
   );
 }
