@@ -31,8 +31,8 @@ export default function TwoColumns() {
 
       <section className={styles.section} aria-label="Présentation du projet">
         <div className={styles.grid}>
-          <div className={styles.textCol}>
-            <ExpandableVideoText />
+          <div className={styles.mediaCol}>
+            <VimeoEmbed videoId="1229180211" title="ZATRAP_REGIS GRANVILLE_092026" />
           </div>
 
           <div className={styles.mediaCol}>
