@@ -35,17 +35,8 @@ export default function TwoColumns() {
             <VimeoEmbed videoId="1229180211" title="ZATRAP_REGIS GRANVILLE_092026" />
           </div>
 
-          <div className={styles.mediaCol}>
-            <div className={styles.photoWrap}>
-              <Image
-                src={sidePhoto}
-                alt="Sculpture en bois de Zatrap'"
-                fill
-                sizes="(max-width: 900px) 100vw, 560px"
-                className={styles.photo}
-              />
-            </div>
-            <p className={styles.photoCredit}>Crédit photo : JCP2026</p>
+          <div className={styles.textCol}>
+            <ExpandableBio />
           </div>
         </div>
       </section>
