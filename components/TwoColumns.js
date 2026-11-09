@@ -14,7 +14,7 @@ export default function TwoColumns() {
             <ExpandableVideoText />
           </div>
 
-          <div className={styles.mediaCol}>
+          <div className={styles.mediaColPhoto}>
             <div className={styles.photoWrap}>
               <Image
                 src={sidePhoto}

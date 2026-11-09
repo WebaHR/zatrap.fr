@@ -96,6 +96,11 @@
   max-width: 46ch;
 }
 
+.mediaColPhoto {
+  width: 100%;
+  max-width: none;
+}
+
 .photoWrap {
   position: relative;
   width: 100%;
