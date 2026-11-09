@@ -93,7 +93,7 @@
 
 .mediaCol {
   width: 100%;
-  min-width: 0;
+  max-width: 46ch;
 }
 
 .photoWrap {
