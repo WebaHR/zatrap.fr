@@ -8,7 +8,7 @@ export default function ExpandableBio() {
 
   return (
     <>
-      <h2 className={styles.heading}>Régis Granville, artiste plasticien et visuel</h2>
+      <h2 className={styles.heading}>Régis Granville, artiste visuel et plasticien</h2>
       <div
         id="bio-text-panel"
         className={`${styles.textContent} ${
