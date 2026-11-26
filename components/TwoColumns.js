@@ -24,7 +24,7 @@ export default function TwoColumns() {
                 className={styles.photo}
               />
             </div>
-            <p className={styles.photoCredit}>Crédit photo : JCP2026</p>
+            <p className={styles.photoCredit}>©JCP2026</p>
           </div>
         </div>
       </section>
